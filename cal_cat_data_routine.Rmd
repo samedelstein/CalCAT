@@ -20,12 +20,12 @@ output: html_document
 ###########################################################
 
 knitr::opts_chunk$set(echo = TRUE)
-
+#install.packages("kableExtra")
 library(readr)
 library(stringr)
 library(pool)
 library(DBI)
-library(odbc)
+#library(odbc)
 library(pool)
 library(dplyr)
 library(tidyr)
@@ -44,7 +44,7 @@ sapply(list.files("R", full.names = T), source)
 ############         PARAMTERS TO CHANGE        ###############
 ###############################################################
 
-state_name <- "California"
+state_name <- "New York"
 
 counties <- get_counties()
 state_abbrv <- get_state_abbrv(State = state_name)
@@ -102,7 +102,7 @@ fwrite(rt_live, paste0(data_path,"rt_live.csv"))
 
 ```{r include = FALSE}
 ### Epiforecasts ###
-
+###CHANGE URL to https://raw.githubusercontent.com/epiforecasts/covid-regional/master/united-states/regional-summary/rt.csv###
 epi_forecast <- grab_epi_forecasts()
 
 fwrite(epi_forecast, paste0(data_path,"epi_forecast.csv"))
@@ -154,6 +154,7 @@ fwrite(rand_df, paste0(data_path,"rand_scenarios.csv"))
 ```{r include = FALSE}
 ### MOBS ### 
 #https://covid19.gleamproject.org/
+###For New York State, need to change State name to "New York State"
 
 mobs <- grab_mobs()
 

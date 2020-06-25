@@ -61,7 +61,7 @@ ui <- navbarPage(
                                 br(),
                                 HTML("<div style='text-align:center'><h1>Modeling COVID-19 to Inform State and Local Response</h1></div><br>"),
                                 hr()),
-                         column(3,""),
+                         column(3,"")
                  ), #End of fluidRow
                  br(),
                  br(),
@@ -110,7 +110,7 @@ ui <- navbarPage(
                             
                              h4(paste0("Alpha Version | Released ",date_updated)),
                              #h4("EXPIRES: April 10, 2020"),
-                             HTML("<h5>CONTACT: YOUR CONTACT INFO HERE</h5>"),
+                             HTML("<h5>CONTACT: Sam Edelstein</h5>"),
                                                          HTML("<h5><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx' target='_blank'>CDPH COVID-19 Page</a>  |  <a href='https://covid19.ca.gov/' target='_blank'>ca.gov COVID-19 Page</a> | <a href= 'https://github.com/StateOfCalifornia/CalCAT' target='_blank'>CalCAT Open Source</a></h5> "),
                              HTML("<h6>Icons provided by the nounproject.com: <a href='https://thenounproject.com/browse/?i=2683859' target='_blank'>Magnify</a> | <a href='https://thenounproject.com/browse/?i=772325' target='_blank'>Binoculars</a> | <a href='https://thenounproject.com/browse/?i=1630136' target='_blank'>Telescope</a>")
                      ),
@@ -185,7 +185,7 @@ ui <- navbarPage(
                             
                             h4(paste0("Alpha Version | Released ",date_updated)),
                             #h4("EXPIRES: April 10, 2020"),
-                            HTML("<h5>CONTACT: YOUR CONTACT INFO HERE</h5>"),
+                            HTML("<h5>CONTACT: Sam Edelstein</h5>"),
                                                         HTML("<h5><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx' target='_blank'>CDPH COVID-19 Page</a>  |  <a href='https://covid19.ca.gov/' target='_blank'>ca.gov COVID-19 Page</a> | <a href= 'https://github.com/StateOfCalifornia/CalCAT' target='_blank'>CalCAT Open Source</a></h5> ")
                      ),
                      column(4,
@@ -209,7 +209,7 @@ ui <- navbarPage(
                                column(3,
                                       h4("Current Daily Hospitalizations:"),
                                       fluidRow(
-                                      valueBoxOutput("actual.hosp.box", width = 12),
+                                      valueBoxOutput("actual.hosp.box", width = 12)
                                       #uiOutput("proj.hosp.box")
                                       ),
                                       h4("30-Day Projected Total:"),
@@ -299,7 +299,7 @@ ui <- navbarPage(
                                  
                                  h4(paste0("Alpha Version | Released ",date_updated)),
                                  #h4("EXPIRES: April 10, 2020"),
-                                 HTML("<h5>CONTACT: YOUR CONTACT INFO HERE</h5>"),
+                                 HTML("<h5>CONTACT: Sam Edelstein</h5>"),
                                                              HTML("<h5><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx' target='_blank'>CDPH COVID-19 Page</a>  |  <a href='https://covid19.ca.gov/' target='_blank'>ca.gov COVID-19 Page</a> | <a href= 'https://github.com/StateOfCalifornia/CalCAT' target='_blank'>CalCAT Open Source</a></h5> ")
                           ),
                           column(4,
@@ -428,7 +428,7 @@ ui <- navbarPage(
                              
                              h4(paste0("Alpha Version | Released ",date_updated)),
                              #h4("EXPIRES: April 10, 2020"),
-                             HTML("<h5>CONTACT: YOUR CONTACT INFO HERE</h5>"),
+                             HTML("<h5>CONTACT: Sam Edelstein</h5>"),
                                                          HTML("<h5><a href='https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/ncov2019.aspx' target='_blank'>CDPH COVID-19 Page</a>  |  <a href='https://covid19.ca.gov/' target='_blank'>ca.gov COVID-19 Page</a> | <a href= 'https://github.com/StateOfCalifornia/CalCAT' target='_blank'>CalCAT Open Source</a></h5> ")
                       ),
                       column(4,
@@ -477,7 +477,7 @@ ui <- navbarPage(
                         h4("Imperial College London (ILC)"),
                         HTML("<a href = 'https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-23-united-states/' target='_blank'>Imperical College London COVID-19 State-Level Tracking</a><p>Description is forthcoming."),
                         p(),
-                        HTML("<a href = 'https://mrc-ide.github.io/covid19usa/#/download' target='_blank'>raw data</a>"),
+                        HTML("<a href = 'https://mrc-ide.github.io/covid19usa/#/download' target='_blank'>raw data</a>")
                  ), # end Nowcasts Column
                  column(4,
                         

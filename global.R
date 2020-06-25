@@ -4,7 +4,7 @@
 ###################### -- Cesar Chavez ###########
 ##################################################
 
-
+#install.packages("pool")
 library(shinythemes)
 library(shinydashboard)
 library(shinyWidgets)
@@ -37,7 +37,7 @@ library(jsonlite)
 
 # sapply(list.files("R/", full.names = T), source)
 sapply(list.files("R", full.names = T), source)
-state_name <- "Georgia"
+state_name <- "New York"
 
 counties <- get_counties()
 state_abbrv <- get_state_abbrv(State = state_name)
